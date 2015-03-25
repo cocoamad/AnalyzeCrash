@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>5E155AC5-32DF-470D-BD4A-9A8C63FEDA59</string>
+	<key>IDESourceControlProjectName</key>
+	<string>AnalyzeCrash</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>DFBD8D1BF267A2D52B9155DDA1B228F3242D0FD6</key>
+		<string>https://github.com/cocoamad/AnalyzeCrash.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>AnalyzeCrash.xcodeproj</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>DFBD8D1BF267A2D52B9155DDA1B228F3242D0FD6</key>
+		<string>../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/cocoamad/AnalyzeCrash.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>111</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>DFBD8D1BF267A2D52B9155DDA1B228F3242D0FD6</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>DFBD8D1BF267A2D52B9155DDA1B228F3242D0FD6</string>
+			<key>IDESourceControlWCCName</key>
+			<string>AnalyzeCrash</string>
+		</dict>
+	</array>
+</dict>
+</plist>

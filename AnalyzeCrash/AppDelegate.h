@@ -7,9 +7,11 @@
 //
 
 #import <Cocoa/Cocoa.h>
+#import "DragWindow.h"
 
 @interface AppDelegate : NSObject <NSApplicationDelegate>
 
+- (IBAction)analyze:(id)sender;
 
 @end
 

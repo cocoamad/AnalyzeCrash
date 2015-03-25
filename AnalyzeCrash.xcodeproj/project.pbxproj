@@ -12,6 +12,7 @@
 		09F90BF01AC2D7C200C9123D /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 09F90BEF1AC2D7C200C9123D /* Images.xcassets */; };
 		09F90BF31AC2D7C200C9123D /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 09F90BF11AC2D7C200C9123D /* MainMenu.xib */; };
 		09F90BFF1AC2D7C300C9123D /* AnalyzeCrashTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 09F90BFE1AC2D7C300C9123D /* AnalyzeCrashTests.m */; };
+		BCC6D2591AC2F2280047472F /* DragWindow.m in Sources */ = {isa = PBXBuildFile; fileRef = BCC6D2581AC2F2280047472F /* DragWindow.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,6 +36,8 @@
 		09F90BF81AC2D7C200C9123D /* AnalyzeCrashTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AnalyzeCrashTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		09F90BFD1AC2D7C300C9123D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		09F90BFE1AC2D7C300C9123D /* AnalyzeCrashTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AnalyzeCrashTests.m; sourceTree = "<group>"; };
+		BCC6D2571AC2F2280047472F /* DragWindow.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DragWindow.h; sourceTree = "<group>"; };
+		BCC6D2581AC2F2280047472F /* DragWindow.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DragWindow.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -78,6 +81,7 @@
 			children = (
 				09F90BEA1AC2D7C200C9123D /* AppDelegate.h */,
 				09F90BEB1AC2D7C200C9123D /* AppDelegate.m */,
+				BCC6D2551AC2F2280047472F /* Class */,
 				09F90BEF1AC2D7C200C9123D /* Images.xcassets */,
 				09F90BF11AC2D7C200C9123D /* MainMenu.xib */,
 				09F90BE81AC2D7C200C9123D /* Supporting Files */,
@@ -109,6 +113,23 @@
 				09F90BFD1AC2D7C300C9123D /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		BCC6D2551AC2F2280047472F /* Class */ = {
+			isa = PBXGroup;
+			children = (
+				BCC6D2561AC2F2280047472F /* UI */,
+			);
+			path = Class;
+			sourceTree = "<group>";
+		};
+		BCC6D2561AC2F2280047472F /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				BCC6D2571AC2F2280047472F /* DragWindow.h */,
+				BCC6D2581AC2F2280047472F /* DragWindow.m */,
+			);
+			path = UI;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -210,6 +231,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BCC6D2591AC2F2280047472F /* DragWindow.m in Sources */,
 				09F90BEE1AC2D7C200C9123D /* main.m in Sources */,
 				09F90BEC1AC2D7C200C9123D /* AppDelegate.m in Sources */,
 			);
@@ -398,6 +420,7 @@
 				09F90C041AC2D7C300C9123D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		09F90C051AC2D7C300C9123D /* Build configuration list for PBXNativeTarget "AnalyzeCrashTests" */ = {
 			isa = XCConfigurationList;
@@ -406,6 +429,7 @@
 				09F90C071AC2D7C300C9123D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

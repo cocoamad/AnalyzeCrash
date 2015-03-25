@@ -7,20 +7,14 @@
 //
 
 #import "AppDelegate.h"
+#import "DragWindow.h"
 
-@interface DropWindow : NSWindow
-@end
+@interface AppDelegate () <NSTableViewDataSource, NSTableViewDelegate, DragFileDelegate>
 
-@implementation DropWindow
-
-@end
-
-@interface AppDelegate () <NSTableViewDataSource, NSTableViewDelegate>
-
-@property (weak) IBOutlet DropWindow *window;
+@property (weak) IBOutlet DragWindow *window;
 
 @property (weak) IBOutlet NSTableView *tableView;
-
+@property (weak) IBOutlet NSButton *analyzeBtn;
 @property (nonatomic, strong) NSMutableArray *dataSource;
 @end
 
@@ -28,9 +22,9 @@
 
 - (void)applicationDidFinishLaunching:(NSNotification *)aNotification {
     // Insert code here to initialize your application
-    self.dataSource = [NSMutableArray arrayWithObjects: @"1", @"2", nil];
-     [self.window registerForDraggedTypes: [NSArray arrayWithObjects: NSFilenamesPboardType, nil]];
-    [self.tableView reloadData];
+    self.window.dragDelegate = self;
+    self.dataSource = [NSMutableArray array];
+    [self.window registerForDraggedTypes: [NSArray arrayWithObjects: NSFilenamesPboardType, nil]];
 }
 
 - (void)applicationWillTerminate:(NSNotification *)aNotification {
@@ -61,21 +55,15 @@
     return 20;
 }
 
-- (NSDragOperation)tableView:(NSTableView *)tableView validateDrop:(id <NSDraggingInfo>)info proposedRow:(NSInteger)row proposedDropOperation:(NSTableViewDropOperation)dropOperation;
+#pragma mark Drag File Delegate
+- (void)dragFiles:(NSArray *)files
 {
-    
-    if (row < self.dataSource.count) {
-        return NSDragOperationNone;
-    }
-    
-    NSLog(@"%ld", row);
-    
-    return NSDragOperationCopy;
+    [self.dataSource addObjectsFromArray: files];
+    [self.tableView reloadData];
 }
 
-- (BOOL)tableView:(NSTableView *)tableView acceptDrop:(id <NSDraggingInfo>)info row:(NSInteger)row dropOperation:(NSTableViewDropOperation)dropOperation;
-{ 
-    NSLog(@"%ld", dropOperation);
-    return YES;
+- (IBAction)analyze:(id)sender
+{
+    NSLog(@"123");
 }
 @end
